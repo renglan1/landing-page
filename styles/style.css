@@ -105,7 +105,7 @@ button {
   background-color: #3882f6;
   border: none;
   border-radius: 8px;
-  padding: 12px 24px;
+  padding: 8px 24px;
   font-size: 18px;
   font-weight: bold;
   color: #f9faf8;
@@ -148,9 +148,50 @@ button {
 }
 
 .quote {
+  display: flex;
+  flex-direction: column;
   background-color: #e5e7eb;
+
+  .text {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  .author {
+    align-self: flex-end;
+    font-weight: bold;
+    font-size: 24px;
+  }
+}
+
+.call-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 100px;
+  border-radius: 16px;
+  background-color: #3882f6;
+
+  .call {
+    .main {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .secondary {
+      font-size: 18px;
+    }
+  }
+
+  button {
+    border: 2px solid #f9faf8;
+  }
 }
 
 .footer {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
   background-color: #1f2937;
+  padding: 4% 0;
 }
